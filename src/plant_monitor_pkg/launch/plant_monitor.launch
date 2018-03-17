@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="rqt_console" name="rqt_console" type="rqt_console"/>
+  <node pkg="rqt_gui" name="rqt_gui" type="rqt_gui"/>
+
+  <node pkg="rosserial_python" name="ArduinoMega_Serial" type="serial_node.py">
+   <param name="port" value="/dev/ttyACM0"/>
+   <param name="baud" value="57600"/>
+</node>
+  <node pkg="plant_monitor_pkg" name="filter_node" type="filter_node"/>
+  <node pkg="plant_monitor_pkg" name="thingspeak_publisher" type="thingspeak_pub.py"/>
+  <node pkg="plant_monitor_pkg" name="camera_node" type="camera_node.py"/>
+</launch>
