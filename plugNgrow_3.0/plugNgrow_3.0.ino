@@ -8,7 +8,7 @@
    e a luminosidade com um LDR.
 
    Os dados são enviados via serial do para uma RPi
-   Utilizando ROS, com o pkg ROSSERIAL
+   utilizando ROS, com o pkg ROSSERIAL.
 
    Autor: Tiago S. Lourenço
    Data: 02/01/2017
