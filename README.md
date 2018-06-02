@@ -1,2 +1,2 @@
 # plant_ws
-ROS package to monitor a plant.
+ROS package to monitor a garden.
